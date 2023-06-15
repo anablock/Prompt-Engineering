@@ -21,3 +21,4 @@ sfdx auth:jwt:grant --clientid 04580y4051234051 \
 
 ## Resources
 * https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_jwt_flow.htm
+* https://benahm0.medium.com/sfdx-org-authorization-%EF%B8%8F-a75b54861b54
