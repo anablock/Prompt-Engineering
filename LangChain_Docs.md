@@ -15,7 +15,7 @@ Chains allow us to combine multiple components together to create a single, cohe
 4. Vector stores - numbers are stored in a database called Vector Database
 
 ## Retrieval Process
-
+![Prompt Retrieval Process](https://images.ctfassets.net/4x83attbnrpr/6VN3Lg1G5OG8PsuizjuVC/55860ef77de4b78da208fdbde7ff31e7/Screenshot_2023-06-14_at_7.14.35_PM.png)
 
 * https://python.langchain.com/en/latest/modules/chains.html
 * [Intro to Chains](https://www.youtube.com/watch?v=Y_O-x-itHaU)
