@@ -9,17 +9,10 @@ Chains allow us to combine multiple components together to create a single, cohe
 
 ## Embedding Path (or Indexing)
 
-1. Document loaders
-* Document loaders - extract text from the source documents
-
-2. Text splitters
-* Text splitters - split long pieces of text into chunks
-
-3. Embedding models
-* Embedding models - convert text to numbers, such that similar meaning texts are closer in numbers to each other
-
-4. Vector stores
-* Vector stores - numbers are stored in a database called Vector Database
+1. Document loaders - extract text from the source documents
+2. Text splitters - split long pieces of text into chunks
+3. Embedding models - convert text to numbers, such that similar meaning texts are closer in numbers to each other
+4. Vector stores - numbers are stored in a database called Vector Database
 
 ## Retrieval Process
 
