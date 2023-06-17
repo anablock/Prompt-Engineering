@@ -8,16 +8,22 @@
 ### chatgpt-linux-assistant
 * [Github](https://github.com/manno/chatgpt-linux-assistant/tree/main)
 
+### chatgpt-retrieval-plugin
+The retrieval plugin includes:
+* Support for multiple vector databases providers
+* All 4 different authentication methods
+* Multiple different API features
+* [Docs](https://platform.openai.com/docs/plugins/examples)
+* [Github](https://github.com/openai/chatgpt-retrieval-plugin)
+
+The code is a backend API built using FastAPI and Python. It defines endpoints for inserting and querying documents, as well as deleting them. The API uses a datastore that is defined in datastore.factory, and gets instantiated in the startup function.  There is also an authentication middleware in place that checks for a bearer token passed in the header of each request. The token can be set as an environment variable, and is checked against the token in the validate_token function. If the token is missing or invalid, a 401 HTTP error is returned.
+
 ### gpt-discord-bot
 * [Github](https://github.com/openai/gpt-discord-bot/blob/main/src/base.py)
 
 ### pinecone-next-semantic-search
 * [Github](https://github.com/anablock/pinecone-next-semantic-search)
 * Tech stack: node/js/ts/next.js
-
-### chatgpt-linux-assistant
-* [Github](https://github.com/manno/chatgpt-linux-assistant/tree/main)
-* Tech stack: python
 
 ### Next.js Boilerplate for a simple ChatGPT Plugin
 * [Github](https://github.com/dabit3/nextjs-chatgpt-plugin-starter)
