@@ -22,3 +22,6 @@ Chains allow us to combine multiple components together to create a single, cohe
 
 ![Prompt Retrieval Architecture](https://images.ctfassets.net/4x83attbnrpr/388F8zv7SE7tdCvuiKH69p/cfeba0760652d2d11284c1814d47e282/Architecture_Diagram.png)
 
+
+## FlowiseAI
+
