@@ -103,3 +103,13 @@ Replace your_openai_api_key with your actual OpenAI API key. Modify the data dic
 Run the Python script:Execute the script using the command python script_name.py in your terminal or command prompt, where script_name.py is the name of the Python file you created in step 3.
 
 This script will send the JSON data to the OpenAI API, and the API will return a response containing the generated text. You can parse and use this response as needed. Note that this example uses the davinci-codex engine, but you can replace it with your desired engine (e.g., text-davinci-002, text-curie-002, etc.).
+
+## Storing Embeddings in Postgres
+
+`pgvector` is a Postgres extension that provides support for vector operations, including similarity search and nearest neighbor search. It allows you to store vectors as columns in a database table and perform vector operations on them using SQL queries.
+
+One interesting use case of `pgvector` is to use it in conjunction with OpenAI embeddings. Since `OpenAI embeddings represent words and phrases as high-dimensional vectors`, you can store these vectors in a `pgvector column` and use the extension's similarity search capabilities to find similar words or phrases in a large dataset.
+
+For example, let's say you have a database of customer reviews and you want to find all the reviews that mention a particular product. You could use OpenAI embeddings to represent each review as a vector and store these vectors in a pgvector column. Then, you could perform a similarity search to find all the reviews that are similar to the vector representing the product name.
+
+This approach can be very powerful for applications that involve large amounts of text data, as it allows you to perform complex queries on the data using vector operations. However, it does require some additional setup and configuration compared to traditional SQL queries, so it may not be suitable for all use cases.
