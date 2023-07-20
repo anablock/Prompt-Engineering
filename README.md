@@ -3,7 +3,6 @@
 
 A collection of awesome prompts, AI/ML libraries, code, and shiny things from [Anablock](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
-
 ## Courses
 * [Article Summarizer Application using OpenAI's GPT model](https://www.youtube.com/watch?v=vpvtZZi5ZWk&t=423s)
 * [Build & Integrate your own custom chatbot to a website (Python & JavaScript)](https://www.youtube.com/watch?v=a37BL0stIuM)
