@@ -65,9 +65,9 @@ response = get_completion(prompt)
 print(response)
 ```
 
-Universal Translator
+## Universal Translator
 
-Imagine you are in charge of IT at a large multinational e-commerce company. Users are messaging you with IT issues in all their native languages. Your staff is from all over the world and speaks only their native languages. You need a universal translator!
+<i>Imagine you are in charge of IT at a large multinational e-commerce company. Users are messaging you with IT issues in all their native languages. Your staff is from all over the world and speaks only their native languages. You need a universal translator!</i>
 
 ```py
 user_messages = [
