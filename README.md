@@ -1,7 +1,7 @@
 # Prompt-Engineering
 # Awesome Prompts [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/anablock/Prompt-Engineering)
 
-A collection of awesome prompts [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) AI/ML libraries, resources and shiny things.
+A collection of awesome prompts, AI/ML libraries, resources, and shiny things from [Anablock](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 
 ## Courses
