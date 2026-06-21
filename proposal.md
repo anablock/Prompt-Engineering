@@ -2,7 +2,6 @@
 ## Annual Services Proposal
 ### Prepared for: Dr. My G. Tran, DDS
 ### Streamline Dental Solutions | The Forever Smile | Sterolux Sterilizers
----
 
 **Prepared by:** Anablock (anablock.com)
 **Date:** June 21, 2026
@@ -70,7 +69,7 @@ Our engagement model is built on transparency, accountability, and results. We o
 - Brand messaging alignment per Dr. Tran's updated guidelines (removal of "same-day permanent zirconia" language; correct positioning of "same-day implants")
 - Mobile optimization and performance audits
 
-**pSEO / AEO / SEO Metadata Business Logic (All Websites):**
+#### pSEO / AEO / SEO Metadata Business Logic (All Websites)
 
 All four brand websites are managed under a unified search visibility framework covering three distinct layers:
 
@@ -107,8 +106,6 @@ All four brand websites are managed under a unified search visibility framework 
 | aforeversmiles.com/shop | Full | Product × Category pages | Product Q&A, shopping AI |
 | steroluxsterilizer.com | Full | Product × Use-case pages | B2B Q&A, dental professional AI |
 
-**Estimated Monthly Hours:** 35–45 hrs
-
 ---
 
 ### MODULE 2 — Email Marketing
@@ -125,8 +122,6 @@ All four brand websites are managed under a unified search visibility framework 
 - List segmentation, A/B testing, and performance reporting
 - Integration with Anablock CRM for audience management
 
-**Estimated Monthly Hours:** 8–12 hrs
-
 ---
 
 ### MODULE 3 — Blog & Content Generation
@@ -139,8 +134,6 @@ All four brand websites are managed under a unified search visibility framework 
 - Topic research, keyword targeting, and internal linking strategy
 - Content repurposing for social media and email
 - Dr. Tran bio and brand narrative updates across all platforms
-
-**Estimated Monthly Hours:** 8–10 hrs
 
 ---
 
@@ -155,8 +148,6 @@ All four brand websites are managed under a unified search visibility framework 
 - E-commerce analytics and reporting
 - New product/course launch support for The Forever Smile
 - B2B wholesale portal for dental practices (Forever Smile technology licensing)
-
-**Estimated Monthly Hours:** 10–15 hrs
 
 ---
 
@@ -173,8 +164,6 @@ All four brand websites are managed under a unified search visibility framework 
 - Dentina AI integration support and optimization
 - Lead scoring and pipeline reporting dashboards
 
-**Estimated Monthly Hours:** 10–15 hrs
-
 ---
 
 ### MODULE 6 — Video Editing
@@ -189,68 +178,320 @@ All four brand websites are managed under a unified search visibility framework 
 - YouTube long-form video editing (educational content, procedure walkthroughs)
 - Thumbnail design and video SEO optimization
 
-**Estimated Monthly Hours:** 8–12 hrs
+---
+
+### MODULE 7 — AI Payroll Agent: QuickBooks + ADP MCP Server Integration
+
+**Included Brands:** Streamline Dental Solutions (HQ)
+**Delivery Type:** Custom AI Agent Build + Ongoing Maintenance
+**Included in:** Streamline Dental Solutions flat monthly fee
+
+Anablock will design, build, and maintain a custom AI agent powered by a Model Context Protocol (MCP) server that connects directly to the QuickBooks and ADP APIs. This is not a human-administered payroll service — it is an intelligent automation layer that gives Dr. Tran's team a natural-language interface to query, reconcile, and act on payroll and financial data across both platforms without manual data entry or platform-switching.
+
+#### What Is an MCP Server?
+
+A Model Context Protocol (MCP) server is a standardized middleware layer that allows an AI agent (GPT-4o or Claude 3.5 Sonnet) to securely call external APIs — in this case QuickBooks and ADP — as tools. The agent reads data, triggers actions, and returns structured responses in plain language within a secure, authenticated environment. This is the same architecture used by enterprise AI copilots at Salesforce, HubSpot, and Intuit.
+
+#### QuickBooks MCP Capabilities
+
+| Capability | Description |
+|---|---|
+| Chart of Accounts query | AI retrieves, summarizes, and explains account balances on demand |
+| Payroll expense reconciliation | AI cross-references payroll runs against QuickBooks expense categories and flags discrepancies |
+| Vendor payment scheduling | AI reads outstanding bills, suggests payment schedule based on cash flow, drafts payment batches |
+| Cash flow reporting | AI generates plain-language cash flow summaries by period, location, or cost center |
+| Invoice and bill status | AI answers "What invoices are outstanding?" or "What did we pay vendor X last month?" |
+| Journal entry review | AI flags unusual entries and summarizes recent journal activity |
+| Multi-entity support | Configured for Streamline Dental Solutions and Sterolux Sterilizers as separate QuickBooks entities |
+
+#### ADP MCP Capabilities
+
+| Capability | Description |
+|---|---|
+| Payroll run status | AI reports on current and historical payroll run status, totals, and employee counts |
+| Time clock correction workflow | AI identifies flagged time punch discrepancies from ADP and surfaces them for manager approval |
+| Employee earnings summary | AI answers "What was total payroll for location X in May?" or "Show me overtime by department" |
+| Tax filing status | AI retrieves federal and state tax filing status and upcoming deadlines from ADP |
+| New hire / termination sync | AI monitors ADP for new hire and termination events and triggers downstream workflows |
+| Payroll variance analysis | AI compares current payroll run to prior period and flags variances above a defined threshold |
+| PTO and leave balance queries | AI answers employee PTO balance questions routed through the admin interface |
+
+#### AI Agent Interface
+
+The MCP server is exposed through a conversational AI agent accessible to Dr. Tran's authorized team (Adrien Little, accounting, HQ operations) via:
+- **Web chat interface** embedded in the Streamline Dental internal dashboard
+- **Slack or Google Chat** integration — team asks payroll questions directly in their workspace
+- **Scheduled automated reports** — agent proactively pushes weekly payroll summaries, cash flow snapshots, and variance alerts
+
+**Example agent interactions:**
+- *"What was total payroll for all locations last pay period?"* → Agent queries ADP, returns formatted summary
+- *"Are there any time clock corrections pending approval?"* → Agent pulls ADP exceptions, lists by employee and location
+- *"What's our current cash position and what bills are due this week?"* → Agent queries QuickBooks, returns cash flow + AP summary
+- *"Did payroll variance exceed 5% vs. last month at any location?"* → Agent runs comparison, flags outliers
+- *"Schedule vendor payments for all bills due in the next 7 days"* → Agent drafts payment batch in QuickBooks for human approval
+
+#### Technology Stack
+
+| Component | Technology |
+|---|---|
+| MCP Server | Node.js / Python (Anthropic MCP spec) |
+| QuickBooks Integration | QuickBooks Online API (OAuth 2.0) |
+| ADP Integration | ADP Workforce Now API (OAuth 2.0 + ADP API Gateway) |
+| AI Agent | GPT-4o or Claude 3.5 Sonnet (configurable) |
+| Hosting | Vercel Edge Functions or dedicated Node.js server |
+| Security | OAuth 2.0, encrypted credential storage, role-based access control |
+| Logging | Structured audit logs for all agent actions (read and write) |
+
+#### Ongoing Maintenance (included in flat fee)
+
+| Task | Frequency |
+|---|---|
+| API credential rotation and OAuth token refresh | As needed |
+| QuickBooks and ADP API version monitoring and updates | Monthly |
+| New capability additions as APIs expand | Quarterly or on request |
+| Agent prompt tuning and accuracy improvements | Monthly |
+| Error monitoring, logging, and incident response | Ongoing |
+| New workflow automation additions | On request |
+
+> **Important:** The AI agent operates in a human-in-the-loop model for all write operations (payment scheduling, payroll approval, journal entries). The agent drafts and recommends — a human must confirm before any financial transaction is executed. Read-only queries are fully automated.
 
 ---
 
-### MODULE 7 — Payroll Administration Support
+### MODULE 8 — AI Contract & Timesheet Agent: MCP Server Integration
 
 **Included Brands:** Streamline Dental Solutions (HQ)
+**Delivery Type:** Custom AI Agent Build + Ongoing Maintenance
+**Included in:** Streamline Dental Solutions flat monthly fee
 
-**Services:**
-- Payroll processing support and reconciliation (Paylo Pro / preferred platform)
-- Time clock correction management and audit support
-- Payroll reporting and variance analysis
-- Integration with AI tools for automated payroll workflows
-- Vendor payment scheduling and cash flow management support
-- Coordination with accounting team on payroll-related tasks
+Anablock will design, build, and maintain a custom AI agent powered by a Model Context Protocol (MCP) server that automates contract lifecycle management and timesheet administration for Streamline Dental Solutions. This is not a human-administered service — it is an intelligent automation layer that connects to the existing contract, HR, and project management systems to give Dr. Tran's team a natural-language interface for managing vendor agreements, employee timesheets, compliance records, and payment schedules without manual tracking or platform-switching.
 
-**Estimated Monthly Hours:** 5–8 hrs
+#### What Is Being Built
+
+The MCP server connects the AI agent to the following systems as live tools: Basecamp (project and task data), ADP Workforce Now (timesheet and time clock data), QuickBooks Online (vendor payment schedules and AP records), DocuSign or HelloSign (contract e-signature and status), and a structured contract document store (Google Drive or equivalent).
+
+#### Contract Management Capabilities
+
+| Capability | Description |
+|---|---|
+| Vendor contract repository | AI maintains a searchable index of all active vendor contracts with key fields extracted (vendor name, value, start/end dates, renewal terms, payment schedule, auto-renewal clauses) |
+| Expiration and renewal alerts | AI proactively flags contracts approaching expiration at 30, 60, and 90-day windows and drafts renewal notices or termination letters on request |
+| Contract template generation | AI generates new vendor contract drafts from approved templates using natural-language inputs (vendor name, scope, rate, term, payment terms) |
+| E-signature workflow | AI initiates DocuSign or HelloSign signature requests, tracks signing status, and notifies the team when contracts are fully executed |
+| Compliance documentation | AI maintains a compliance log of executed agreements, certificates of insurance, W-9s, and vendor onboarding documents with expiration tracking |
+| Payment schedule tracking | AI cross-references contract payment milestones against QuickBooks AP records and flags missed or upcoming payments |
+| Multi-location vendor management | AI tracks vendor relationships by Streamline Dental location and surfaces location-specific contract obligations on request |
+
+#### Timesheet Administration Capabilities
+
+| Capability | Description |
+|---|---|
+| Timesheet review automation | AI pulls timesheet submissions from ADP for each pay period, checks for missing punches, unapproved overtime, and policy violations, and generates a flagged exception report for manager review |
+| Time clock correction workflow | AI identifies time punch discrepancies in ADP, drafts correction requests with employee name, date, location, and reason, and routes them to the appropriate manager for approval |
+| Approval workflow management | AI tracks pending timesheet approvals across all locations and sends automated reminders to managers before payroll cutoff |
+| Overtime and labor cost analysis | AI answers "Which locations had overtime last week?" or "What is our total labor cost for the Cheyenne location this month?" by querying ADP in real time |
+| New hire timesheet onboarding | AI detects new hire records in ADP and automatically configures their timesheet profile, assigns them to the correct location and pay group, and confirms setup is complete |
+| Audit support | AI generates timesheet audit reports by employee, location, or date range for compliance reviews or labor disputes |
+
+#### AI Agent Interface
+
+The agent is accessible to Dr. Tran's authorized team (Adrien Little, HQ operations, location managers) via:
+- **Web chat interface** embedded in the Streamline Dental internal dashboard
+- **Slack or Google Chat** integration
+- **Scheduled automated reports** pushed weekly without prompting
+
+**Example agent interactions:**
+- *"Which vendor contracts expire in the next 60 days?"* → Agent queries contract store, returns list with renewal options
+- *"Draft a new vendor agreement for our cleaning service at the Sunset location"* → Agent generates contract from template
+- *"Are there any unsigned contracts?"* → Agent checks DocuSign status, returns list of pending signatures
+- *"Show me all timesheet exceptions for last pay period"* → Agent queries ADP, returns flagged discrepancies by location
+- *"Which managers have not approved timesheets for this week?"* → Agent checks ADP approval status, returns list with deadline
+- *"What vendor payments are due this month?"* → Agent queries QuickBooks AP, returns payment schedule with amounts
+
+#### Technology Stack
+
+| Component | Technology |
+|---|---|
+| MCP Server | Node.js / Python (Anthropic MCP spec) |
+| Contract Store Integration | Google Drive API or SharePoint (document indexing and retrieval) |
+| E-Signature Integration | DocuSign API or HelloSign API (OAuth 2.0) |
+| Timesheet Integration | ADP Workforce Now API (OAuth 2.0 + ADP API Gateway) |
+| Payment Integration | QuickBooks Online API (OAuth 2.0) |
+| Project Management Integration | Basecamp API (task and project context) |
+| AI Agent | GPT-4o or Claude 3.5 Sonnet (configurable) |
+| Hosting | Vercel Edge Functions or dedicated Node.js server |
+| Security | OAuth 2.0, encrypted credential storage, RBAC, structured audit logs |
+
+#### Ongoing Maintenance (included in flat fee)
+
+| Task | Frequency |
+|---|---|
+| API credential rotation and token refresh | As needed |
+| ADP, QuickBooks, DocuSign, and Basecamp API version monitoring | Monthly |
+| Contract template library updates | On request |
+| Agent prompt tuning and accuracy improvements | Monthly |
+| Error monitoring, logging, and incident response | Ongoing |
+| New workflow automation additions | On request |
+
+> **Important:** The AI agent operates in a human-in-the-loop model for all write operations including contract generation, signature requests, timesheet corrections, and payment scheduling. The agent drafts and recommends — a human must confirm before any document is sent or any financial action is executed. Read-only queries and report generation are fully automated.
 
 ---
 
-### MODULE 8 — Contract & Timesheet Administration
+### MODULE 8B — Salesforce to Anablock CRM Patient Lead Migration
 
 **Included Brands:** Streamline Dental Solutions (HQ)
+**Delivery Type:** One-Time Data Migration Project
+**Included in:** Streamline Dental Solutions flat monthly fee
 
-**Services:**
-- Vendor contract management and tracking
-- Timesheet review, approval workflow setup, and audit support
-- Contract template creation and management
-- Compliance documentation and record-keeping
-- Integration with project management tools (Basecamp)
-- Structured payment plan creation and tracking for vendor/project costs
+Anablock will execute a full migration of all patient lead data from Streamline Dental Solutions' existing Salesforce instance into the Anablock CRM. This is a structured, phased migration that preserves all lead history, contact relationships, pipeline stages, notes, and activity records. The migration will be completed before the Anablock CRM goes live as the primary system of record.
 
-**Estimated Monthly Hours:** 4–6 hrs
+#### Phase 1 — Discovery & Audit
+
+Anablock will conduct a full audit of the Salesforce instance to inventory all objects, fields, and data volumes relevant to patient lead management. This includes the Lead object, Contact object, Account object, Opportunity object, Activity and Task history, custom dental fields (treatment interest, insurance carrier, referral source, location preference), campaign membership records, and any custom objects built for Streamline Dental's workflow. The audit will produce:
+- A complete field map from Salesforce to Anablock CRM with transformation rules for each field
+- A record count by object
+- A data quality assessment flagging duplicates, incomplete records, and formatting inconsistencies
+- A migration sequencing plan that loads parent records before dependent child records to preserve all relationships
+
+#### Phase 2 — Data Extraction from Salesforce
+
+All data will be extracted from Salesforce using the Salesforce Bulk API 2.0 via the `/jobs/query` endpoint, which supports asynchronous extraction of up to 15 GB of data in CSV format. SOQL queries will be written for each object to pull all relevant fields including system fields (CreatedDate, LastModifiedDate, OwnerId, RecordTypeId). An External ID field will be mapped from the Salesforce record ID to preserve the source system identifier in Anablock CRM, enabling reliable upsert operations and full audit traceability.
+
+#### Phase 3 — Data Transformation & Cleaning
+
+Raw Salesforce exports will be transformed to match the Anablock CRM data model. Transformation steps include:
+- Normalizing phone number formats
+- Standardizing lead status values to Anablock CRM pipeline stages (LEAD, QUALIFIED_LEAD, NURTURING, OPPORTUNITY, CUSTOMER, CLOSED_LOST)
+- Mapping Salesforce campaign source values to Anablock CRM contact source fields
+- Deduplicating records by email address and phone number with a merge strategy agreed upon with Dr. Tran's team
+- Stripping HTML from Salesforce rich text fields and converting to plain text for notes and descriptions
+- Preserving all activity timestamps so that lead history is accurate in the new system
+
+#### Phase 4 — Migration into Anablock CRM
+
+Transformed records will be loaded into Anablock CRM in dependency order: contacts and companies first, then lead records linked to their contacts, then notes and activity history, then pipeline stage assignments and qualification data. A test migration will be run on a 10% sample of records first. The Anablock team will validate record counts, relationship integrity, and field accuracy before running the full migration, executed during a low-traffic window.
+
+#### Phase 5 — Validation & Reconciliation
+
+Post-migration validation includes:
+- Record count comparison between Salesforce and Anablock CRM for every object migrated
+- Spot-check audit of 50 randomly selected lead records comparing all fields between source and destination
+- Duplicate check in Anablock CRM to confirm the deduplication strategy was applied correctly
+- Pipeline distribution report confirming that lead stage counts match the pre-migration Salesforce report
+- Sign-off from Adrien Little and the Anablock team before Salesforce is decommissioned as the primary lead system
+
+#### Phase 6 — Salesforce Decommission Support
+
+After validation, Anablock will assist with configuring Salesforce in read-only mode for a 90-day archive period so that historical records remain accessible if needed. Anablock will provide a final migration report with record counts, transformation rules applied, and any records excluded with reasons.
+
+#### Data Objects Migrated
+
+| Object | What's Migrated |
+|---|---|
+| Leads | Name, email, phone, lead source, status, assigned owner, created date, all custom dental fields (treatment interest, preferred location, insurance carrier, referral source) |
+| Contacts | Full name, email, phone, address, relationship to account |
+| Accounts | Practice or household account records linked to contacts |
+| Opportunities | Active and closed records mapped to Anablock CRM pipeline stages with value, close date, and stage history |
+| Activities & Tasks | Call logs, email logs, meeting notes, and task records with original timestamps and assigned users |
+| Campaign Membership | Lead source and campaign attribution data mapped to Anablock CRM contact source fields |
+| Custom Fields | All custom Salesforce fields mapped to equivalent Anablock CRM fields or added as custom fields before migration begins |
+
+---
+
+### MODULE 8C — Anablock CRM × CareStack API Integration
+
+**Included Brands:** Streamline Dental Solutions (HQ)
+**Delivery Type:** Custom API Integration Build + Ongoing Maintenance
+**Included in:** Streamline Dental Solutions flat monthly fee
+**CareStack Developer Portal:** developer.carestack.com
+
+Anablock will design, build, and maintain a bidirectional integration between the Anablock CRM and CareStack, the dental practice management platform used by Streamline Dental Solutions. CareStack exposes a REST API and webhook system at developer.carestack.com covering patients, appointments, treatment plans, insurance, payment summaries, communications, and documents. This integration will make Anablock CRM the single source of truth for patient lead and relationship data while CareStack remains the system of record for clinical operations, scheduling, and billing.
+
+#### Integration Architecture
+
+The integration uses a middleware layer built on Node.js deployed on Vercel Edge Functions. This middleware handles authentication with both the Anablock CRM API and the CareStack REST API using OAuth 2.0, routes data between the two systems based on event triggers and scheduled sync jobs, transforms data between the two schemas, logs all sync events for audit and debugging, and handles error retries and alerting when sync failures occur.
+
+#### CareStack → Anablock CRM Data Flows
+
+| CareStack Event | Anablock CRM Action |
+|---|---|
+| New patient created | Auto-create or update matching contact with name, email, phone, address, DOB, preferred location, and insurance carrier. Assign appropriate pipeline stage. |
+| Appointment scheduled | Log note with appointment date, time, location, provider, and type. Auto-advance LEAD or QUALIFIED_LEAD to NURTURING. |
+| Appointment completed | Update last contacted date, log completion note, trigger post-visit follow-up sequence (review request, treatment plan follow-up, or referral ask). |
+| Appointment cancelled or no-show | Log event, trigger re-engagement sequence after 48 hours. |
+| Treatment plan created or updated | Log treatment plan summary (type, estimated value, plan status) on contact record. |
+| Payment received | Update payment history note, trigger thank-you or review request sequence. |
+| Patient communication sent | Log communication event on contact timeline for complete interaction history. |
+
+#### Anablock CRM → CareStack Data Flows
+
+| Anablock CRM Event | CareStack Action |
+|---|---|
+| Lead advanced to CUSTOMER stage | Auto-create new patient record in CareStack pre-populated with all available demographic fields — no front desk re-entry required. |
+| Contact phone, email, or address updated | Push update to corresponding CareStack patient record to keep both systems in sync. |
+| Communication opt-in or opt-out updated | Sync patient communication preferences in CareStack to ensure compliance with patient communication consent. |
+
+#### CareStack API Resources Used
+
+| API Resource | Usage |
+|---|---|
+| Patient API | Create patient, update demographic and insurance information, retrieve by ID or search by name and DOB |
+| Appointments API | Retrieve appointments by patient, location, and date range; receive status change events via webhooks |
+| Treatment Codes API | Retrieve treatment plan details and procedure codes associated with a patient |
+| Payment Summary API | Retrieve patient account balance, insurance balance, and payment history |
+| Patient Communication API | Send texts and emails to patients via CareStack; retrieve communication history by patient |
+| Documents API | Retrieve and upload patient documents (consent forms, treatment summaries) |
+| Webhooks | Subscribe to real-time events: patient created, appointment scheduled/completed/cancelled, treatment plan updated, payment received |
+
+#### Anablock CRM Pipeline Automation Triggered by CareStack Events
+
+| Trigger | Automated Action |
+|---|---|
+| New patient in CareStack, no matching CRM contact | Create contact as LEAD, assign to location pipeline, trigger initial outreach sequence |
+| Appointment scheduled for LEAD or QUALIFIED_LEAD | Advance to NURTURING, log note, pause active outreach sequences |
+| Appointment completed | Log completion note, trigger post-visit follow-up sequence based on appointment type |
+| No-show or cancellation | Log event, trigger re-engagement sequence after 48 hours |
+| Treatment plan created above defined value threshold | Flag as high-value opportunity, notify assigned team member |
+| Payment received and treatment complete | Advance to CUSTOMER, trigger loyalty and referral sequence |
+
+#### Technology Stack
+
+| Component | Technology |
+|---|---|
+| Middleware | Node.js on Vercel Edge Functions or dedicated server |
+| CareStack Integration | CareStack REST API (OAuth 2.0) + CareStack Webhooks (HTTPS POST) |
+| Anablock CRM Integration | Anablock CRM API |
+| Data Transformation | Field mapping layer with schema validation |
+| Error Handling | Retry logic with exponential backoff, dead letter queue, Slack/email alerting for sync failures |
+| Logging | Structured event logs: timestamp, event type, source record ID, destination record ID, status |
+| Security | OAuth 2.0 for both APIs, HTTPS for all webhook delivery, encrypted credential storage, RBAC |
+
+#### Ongoing Maintenance (included in flat fee)
+
+| Task | Frequency |
+|---|---|
+| CareStack and Anablock CRM API version monitoring and updates | Monthly |
+| Webhook endpoint monitoring and uptime alerting | Ongoing |
+| New event type additions as CareStack expands its API | Quarterly or on request |
+| Field mapping updates when either system adds new fields | On request |
+| Sync error review and resolution | Ongoing |
+| Monthly integration health report (sync volume, error rate, data freshness) | Monthly |
 
 ---
 
 ### MODULE 9 — PPC Campaign Management
 
-**Included Brands:** Streamline Dental, The Forever Smile
+> **Important — Separate Cost Centers:** PPC is managed and invoiced as two independent accounts. Streamline Dental Solutions and Sterolux Sterilizers are separate legal entities and separate cost centers. Each account is billed independently. Ad spend budgets are always paid directly by the client to Google/Meta — Anablock's fee covers management only.
 
-**Services:**
-- Google Ads campaign strategy, setup, and ongoing management
-- Meta Ads (Facebook/Instagram) campaign management
-- Custom PPC landing page development (coordinated with Module 1)
-- Keyword research, bid management, and negative keyword optimization
-- Conversion tracking setup (WhatConverts, Google Tag Manager)
-- Monthly performance reporting with ROI analysis
-- A/B testing of ad creatives and landing pages
-- Competitor analysis and market positioning
+#### Account A — Streamline Dental Solutions (silverstatesmiles.com + aforeversmiles.com)
+**Status:** ✅ ACTIVE | **Billing Entity:** Streamline Dental Solutions
+**Platforms:** Google Ads + Meta Ads (Facebook & Instagram)
 
-**Important — Separate Cost Centers:** PPC is managed and invoiced as two independent accounts. Streamline Dental Solutions and Sterolux Sterilizers are separate legal entities and separate cost centers. Each account is billed independently. Ad spend budgets are always paid directly by the client to Google/Meta — Anablock's fee covers management only.
-
-ACCOUNT A — Streamline Dental Solutions (silverstatesmiles.com + aforeversmiles.com)
-Status: ACTIVE | Billing Entity: Streamline Dental Solutions
-Platforms: Google Ads + Meta Ads (Facebook & Instagram)
-
-Campaigns Managed:
+**Campaigns Managed:**
 - Streamline Dental — multi-location patient acquisition (Google Search, Local, Display)
 - The Forever Smile — full-mouth rehabilitation & implant lead generation (Google Search + Meta)
 - Shared remarketing audiences across both brands
 
-Services Included:
+**Services Included:**
 - Google Ads & Meta Ads campaign strategy, build, and ongoing optimization
 - Keyword research, bid management, Quality Score optimization, negative keyword pruning
 - Audience targeting, lookalike audiences, and retargeting setup
@@ -259,37 +500,34 @@ Services Included:
 - A/B testing of ad copy, creatives, and landing pages
 - Competitor analysis and market positioning updates
 
-Ad-Hoc Creative & Web Development Hours (drawn from monthly retainer):
+**Ad-Hoc Creative & Web Development (included in flat fee):**
 
-| Task | Est. Monthly Hours |
+| Task | Est. Monthly Volume |
 |---|---|
-| Custom PPC landing page builds & updates | 6–10 hrs |
-| Ad creative design (static, animated, video) | 4–6 hrs |
-| A/B test variant pages | 2–4 hrs |
-| Conversion tracking, pixel, GTM updates | 2–3 hrs |
-| Campaign-specific copywriting | 2–3 hrs |
-| TOTAL PPC Creative/Dev Hours (Account A) | 16–26 hrs/month |
+| Custom PPC landing page builds & updates | 6–10 per month |
+| Ad creative design (static, animated, video) | 4–6 per month |
+| A/B test variant pages | 2–4 per month |
+| Conversion tracking, pixel, GTM updates | As needed |
+| Campaign-specific copywriting | As needed |
 
-Note: These hours are drawn from the 100-hour monthly retainer. During high-volume periods (new location launches, seasonal pushes, new service promotions), additional hours may be required and billed at $55/hour.
-
-Management Fee: $2,500/month flat — billed to Streamline Dental Solutions
+**Management Fee:** $2,500/month flat — billed to Streamline Dental Solutions
 
 ---
 
-ACCOUNT B — Sterolux Sterilizers (steroluxsterilizer.com)
-Status: PENDING — Awaiting FDA Approval | Billing Entity: Sterolux Sterilizers (separate account)
+#### Account B — Sterolux Sterilizers (steroluxsterilizer.com)
+**Status:** ⏳ PENDING — Awaiting FDA Approval | **Billing Entity:** Sterolux Sterilizers (separate invoice)
 
 Sterolux is a completely separate business entity and cost center. Once FDA approval is received, Anablock will activate a dedicated PPC campaign billed independently to the Sterolux account.
 
-Planned Platforms: Google Ads + Meta Ads (B2B dental practice targeting)
+**Planned Platforms:** Google Ads + Meta Ads (B2B dental practice targeting)
 
-Planned Campaigns:
+**Planned Campaigns:**
 - Google Search — dental sterilizer, autoclave, infection control keywords
 - Meta Ads — dental practice owner targeting (B2B audience)
 - Google Display — remarketing to dental practice website visitors
 - YouTube — product demonstration and education ads
 
-Services (Upon Activation):
+**Services Upon Activation:**
 - Full campaign build from scratch (Google Ads + Meta Ads)
 - B2B audience strategy — targeting dental practice owners, office managers, DSOs
 - FDA-compliant ad copy and creative (medical device advertising guidelines)
@@ -297,37 +535,24 @@ Services (Upon Activation):
 - Conversion tracking and CRM pipeline integration
 - Monthly performance reporting
 
-Ad-Hoc Creative & Web Development Hours (Sterolux cost center):
+**Management Fee (Upon Activation):** $2,500/month flat — billed to Sterolux Sterilizers
+**Activation Trigger:** FDA approval received + client go-ahead
 
-| Task | Est. Monthly Hours (Post-Launch) |
-|---|---|
-| Sterolux PPC landing pages & updates | 4–6 hrs |
-| Ad creative design (product-focused) | 3–5 hrs |
-| FDA-compliant copy review & updates | 2–3 hrs |
-| Tracking & pixel maintenance | 1–2 hrs |
-| TOTAL PPC Creative/Dev Hours (Account B) | 10–16 hrs/month |
-
-Note: Sterolux creative/dev hours are billed to the Sterolux cost center separately from the Streamline Dental retainer.
-
-Management Fee (Upon Activation): $2,500/month flat — billed to Sterolux Sterilizers
-Activation Trigger: FDA approval received + client go-ahead
-
----
-
-PPC ACCOUNT SUMMARY
+#### PPC Account Summary
 
 | Account | Status | Platforms | Monthly Mgmt Fee | Billed To |
 |---|---|---|---|---|
-| Account A — Streamline Dental / Forever Smile | Active | Google + Meta | $2,500/mo | Streamline Dental Solutions |
-| Account B — Sterolux Sterilizers | Pending FDA | Google + Meta | $2,500/mo (on activation) | Sterolux Sterilizers |
+| Account A — Streamline Dental / Forever Smile | ✅ Active | Google + Meta | $2,500/mo | Streamline Dental Solutions |
+| Account B — Sterolux Sterilizers | ⏳ Pending FDA | Google + Meta | $2,500/mo (on activation) | Sterolux Sterilizers |
 
-Ad spend budgets for all accounts are paid directly by the client to Google and Meta. Anablock does not hold or pass through ad spend funds.
+> Ad spend budgets for all accounts are paid directly by the client to Google and Meta. Anablock does not hold or pass through ad spend funds.
 
 ---
 
 ### MODULE 10 — Anablock CRM
 
 **Included Brands:** All brands
+**Included in Annual Package** — no additional charge
 
 **Services:**
 - Full Anablock CRM platform access for Dr. Tran's organization
@@ -337,8 +562,6 @@ Ad spend budgets for all accounts are paid directly by the client to Google and 
 - Automated follow-up sequences and email campaign management
 - Custom reporting dashboards for each brand
 - Ongoing CRM support and optimization
-
-**Included in Annual Package** (no additional charge)
 
 ---
 
@@ -355,8 +578,6 @@ Ad spend budgets for all accounts are paid directly by the client to Google and 
 - Security audits and performance optimization
 - Custom development projects as needed
 
-**Estimated Monthly Hours:** 8–12 hrs
-
 ---
 
 ### MODULE 12 — A Forever Smile Monthly Creative Production
@@ -366,11 +587,7 @@ Ad spend budgets for all accounts are paid directly by the client to Google and 
 
 This module covers the full monthly creative pipeline for The Forever Smile brand — producing all advertising assets, e-commerce creative, and platform-specific ad sets needed to run active campaigns across Meta, Google, and AI search channels. Every asset produced is brand-compliant, clinically accurate per Dr. Tran's updated guidelines, and optimized for its specific platform and audience.
 
----
-
-#### A. DENTAL IMPLANT ADVERTISING CREATIVE (aforeversmiles.com)
-
-**Monthly deliverables for paid and organic implant advertising:**
+#### A. Dental Implant Advertising Creative (aforeversmiles.com)
 
 | Asset Type | Platform | Monthly Volume | Description |
 |---|---|---|---|
@@ -393,11 +610,7 @@ This module covers the full monthly creative pipeline for The Forever Smile bran
 - Urgency / limited consultation availability
 - Zirconia quality and permanence (correctly positioned — no "same-day permanent" language)
 
----
-
-#### B. E-COMMERCE SHOP CREATIVE (aforeversmiles.com/shop)
-
-**Monthly deliverables for the Forever Smile patient shop:**
+#### B. E-Commerce Shop Creative (aforeversmiles.com/shop)
 
 | Asset Type | Platform | Monthly Volume | Description |
 |---|---|---|---|
@@ -409,13 +622,9 @@ This module covers the full monthly creative pipeline for The Forever Smile bran
 | Shop landing pages | aforeversmiles.com/shop | 1 per campaign | Seasonal or promotion-specific shop landing pages with matching ad creative |
 | Story/Reel shop ads | Instagram + TikTok | 2–3 | Short-form product showcase videos (9:16 format) |
 
----
-
-#### C. AI SEARCH ADVERTISING (ChatGPT, Perplexity, Google AI Overviews, Bing Copilot)
+#### C. AI Search Advertising (ChatGPT, Perplexity, Google AI Overviews, Bing Copilot)
 
 AI search engines are now a primary discovery channel for high-intent dental patients. This sub-module ensures The Forever Smile appears prominently when patients ask AI assistants about dental implants, full-mouth rehabilitation, and related treatments.
-
-**Monthly deliverables:**
 
 | Deliverable | Description |
 |---|---|
@@ -426,11 +635,7 @@ AI search engines are now a primary discovery channel for high-intent dental pat
 | AI citation monitoring report | Monthly report tracking how often The Forever Smile is cited in ChatGPT, Perplexity, and Google AI Overviews for target queries |
 | Structured data updates | FAQ schema, HowTo schema, speakable schema additions to new and existing pages to maximize AI engine consumption |
 
----
-
-#### D. MONTHLY CREATIVE CALENDAR & WORKFLOW
-
-All creative production follows a structured monthly workflow integrated with Basecamp and the PPC campaign calendar:
+#### D. Monthly Creative Calendar & Workflow
 
 | Week | Activity |
 |---|---|
@@ -446,8 +651,6 @@ All creative production follows a structured monthly workflow integrated with Ba
 
 ### MODULE 13 — Deliverables & Reporting
 
-**Monthly deliverables across all modules:**
-
 | Report | Frequency | Contents |
 |---|---|---|
 | SEO / pSEO / AEO Report | Monthly | Keyword rankings, AI citation tracking, new pages published, Core Web Vitals, Search Console data |
@@ -461,40 +664,50 @@ All creative production follows a structured monthly workflow integrated with Ba
 
 ## PRICING SUMMARY
 
-### PRICING PHILOSOPHY
+### Pricing Philosophy
 
-This engagement is structured as a single all-inclusive flat monthly fee — no hourly tracking, no retainer minimums, no overage invoices. The flat fee covers all services: website management, content, email marketing, video editing, AI lead generation, payroll and contract administration, system integrations, and all ad-hoc custom development including PPC creative and landing pages. Dr. Tran receives full Anablock team capacity for one predictable monthly payment.
+This engagement is structured as a single all-inclusive flat monthly fee — no hourly tracking, no overage invoices, no surprises. The flat fee covers all services: website management, content, email marketing, video editing, AI lead generation, AI agent builds, system integrations, and all ad-hoc custom development including PPC creative and landing pages. Dr. Tran receives full Anablock team capacity for one predictable monthly payment.
 
 PPC campaign management is a separate flat fee per account, reflecting the two distinct cost centers (Streamline Dental Solutions and Sterolux Sterilizers). The Forever Smile e-commerce build is a one-time fixed project fee on a milestone payment schedule.
 
----
-
-### FLAT MONTHLY FEE — ALL SERVICES
+### Flat Monthly Fee — All Services
 
 | Component | Details |
 |---|---|
 | **Billing Entity** | Streamline Dental Solutions |
 | **Covers** | Streamline Dental Solutions + The Forever Smile (silverstatesmiles.com + aforeversmiles.com) |
-| **What's Included** | Website management & dev (Modules 1, 4, 11) · pSEO + AEO + SEO metadata business logic across all 4 websites (Module 1) · Email marketing (Module 2) · Blog & content generation (Module 3) · AI lead gen agent (Module 5) · Video editing (Module 6) · Payroll administration (Module 7) · Contract & timesheet administration (Module 8) · System integrations & technical ops (Module 11) · Anablock CRM — included (Module 10) · A Forever Smile monthly creative production: implant ads, e-commerce shop ads, Google Display, Performance Max, ChatGPT/AI search ads, landing pages, ad copy (Module 12) · ALL custom dev & ad-hoc work — no per-asset billing, no overages |
+| **What's Included** | Website management & dev (Modules 1, 4, 11) · pSEO + AEO + SEO metadata business logic across all 4 websites · Email marketing (Module 2) · Blog & content generation (Module 3) · AI lead gen agent (Module 5) · Video editing (Module 6) · AI Payroll Agent — QuickBooks + ADP MCP (Module 7) · AI Contract & Timesheet Agent MCP (Module 8) · Salesforce → Anablock CRM migration (Module 8B) · CareStack API integration (Module 8C) · System integrations & technical ops (Module 11) · Anablock CRM — included (Module 10) · A Forever Smile monthly creative production: implant ads, e-commerce shop ads, Google Display, Performance Max, ChatGPT/AI search ads, landing pages, ad copy (Module 12) · ALL custom dev & ad-hoc work — no per-asset billing, no overages |
 | **MONTHLY FLAT FEE** | **$5,500 / month** |
 | **ANNUAL FLAT FEE** | **$66,000 / year** |
 
 > One flat payment. No hourly tracking. No overages. No surprises. All custom development, creative, and ad-hoc work is included.
 
-### PPC Campaign Management (Flat Fee)
+### PPC Campaign Management — By Cost Center
+
+#### Cost Center 1: Streamline Dental Solutions (ACTIVE)
 
 | Component | Details |
 |---|---|
-| **Accounts Covered — Active** | silverstatesmiles.com + aforeversmiles.com |
-| **Accounts Covered — Pending** | steroluxsterilizer.com (upon FDA approval) |
-| **Monthly PPC Management Fee (Active — Streamline/Forever Smile)** | $2,500 / month — billed to Streamline Dental Solutions |
-| **Monthly PPC Management Fee (Pending — Sterolux)** | $2,500 / month — billed to Sterolux Sterilizers upon FDA approval |
-| **Annual PPC Fee — Streamline Dental (Active)** | **$30,000 / year** — billed to Streamline Dental Solutions |
-| **Annual PPC Fee — Sterolux (Pending FDA)** | **$30,000 / year** — billed to Sterolux Sterilizers upon activation |
-| **Ad-Hoc Creative & Dev — Streamline/Forever Smile** | 16–26 hrs/month drawn from Streamline retainer @ $55/hr |
-| **Ad-Hoc Creative & Dev — Sterolux** | 10–16 hrs/month billed to Sterolux cost center @ $55/hr upon activation |
+| **Accounts Covered** | silverstatesmiles.com + aforeversmiles.com |
+| **Platforms** | Google Ads + Meta Ads |
+| **Includes** | Strategy, optimization, reporting, creative direction, landing page dev, all ad-hoc creative |
+| **Monthly Management Fee** | **$2,500 / month** |
+| **Annual Management Fee** | **$30,000 / year** |
+| **Billed To** | Streamline Dental Solutions |
 
-> Note: PPC ad spend budget is separate and paid directly by the client to Google/Meta. This fee covers strategy, management, reporting, and landing page development only.
+#### Cost Center 2: Sterolux Sterilizers (PENDING — FDA Approval Required)
+
+| Component | Details |
+|---|---|
+| **Accounts Covered** | steroluxsterilizer.com |
+| **Platforms** | Google Ads + Meta Ads (B2B dental practice targeting) |
+| **Includes** | Full campaign build, FDA-compliant creative, landing pages, tracking, reporting |
+| **Monthly Management Fee** | **$2,500 / month** (upon activation) |
+| **Annual Management Fee** | **$30,000 / year** (upon activation) |
+| **Billed To** | Sterolux Sterilizers (separate invoice) |
+| **Activation Trigger** | FDA approval received + client go-ahead |
+
+> All Google and Meta ad spend budgets are paid directly by the client to the respective platforms. Anablock does not hold or pass through ad spend funds.
 
 ### Anablock CRM
 
@@ -505,19 +718,73 @@ PPC campaign management is a separate flat fee per account, reflecting the two d
 
 ---
 
-## ANNUAL INVESTMENT SUMMARY
+## TOTAL INVESTMENT SUMMARY
+
+### Streamline Dental Solutions (Active)
 
 | Line Item | Monthly | Annual |
 |---|---|---|
-| All-Inclusive Flat Fee — Streamline Dental Solutions (all services + all custom dev) | $5,500 | $66,000 |
+| All-Inclusive Flat Fee (all services + all custom dev, Modules 1–13) | $5,500 | $66,000 |
 | PPC Campaign Management — Streamline Dental / Forever Smile (Google + Meta) | $2,500 | $30,000 |
-| PPC Campaign Management — Sterolux Sterilizers (upon FDA approval, separate invoice) | $2,500 | $30,000 |
 | Anablock CRM | Included | Included |
-| **STREAMLINE DENTAL TOTAL (Flat Fee + PPC)** | **$8,000 / month** | **$96,000 / year** |
-| **STEROLUX TOTAL — upon FDA approval (PPC only, separate invoice)** | **$2,500 / month** | **$30,000 / year** |
-| **FOREVER SMILE E-COMMERCE BUILD (one-time, milestone payments)** | — | **$24,750** |
-| **YEAR 1 TOTAL — Streamline + E-Commerce** | | **$120,750** |
-| **YEAR 1 TOTAL — Full Portfolio (incl. Sterolux, ~6 months)** | | **~$135,750** |
+| **STREAMLINE DENTAL TOTAL** | **$8,000 / month** | **$96,000 / year** |
+
+### Sterolux Sterilizers (Upon FDA Approval)
+
+| Line Item | Monthly | Annual |
+|---|---|---|
+| PPC Campaign Management — Sterolux (Google + Meta) | $2,500 | $30,000 |
+| All creative, dev & landing page work | Included in PPC fee | Included |
+| **STEROLUX TOTAL** | **$2,500 / month** | **$30,000 / year** |
+
+### One-Time Projects
+
+| Project | Fixed Fee |
+|---|---|
+| B2C Patient Shop — aforeversmiles.com/shop (headless Shopify + Next.js + Vercel) | $13,200 |
+| B2B Practitioner Portal — partners.aforeversmiles.com | $13,200 |
+| **Bundle Discount (both stores together)** | **–$1,650** |
+| **TOTAL E-COMMERCE BUILD** | **$24,750** |
+
+### Combined First-Year Investment
+
+| Scenario | Total |
+|---|---|
+| Streamline Dental only (Year 1) | $96,000 |
+| + Forever Smile E-Commerce Build (one-time) | $24,750 |
+| **Streamline + E-Commerce (Year 1 Total)** | **$120,750** |
+| + Sterolux PPC (if FDA approved mid-year, ~6 months) | ~$15,000 |
+| **Full Portfolio — Year 1 (all accounts active)** | **~$135,750** |
+
+---
+
+## PAYMENT OPTIONS
+
+### Streamline Dental Solutions — Monthly Flat Fee Options
+
+| Option | Structure | Annual Total | Savings |
+|---|---|---|---|
+| **Option A — Monthly** | $8,000/month (flat fee + PPC) | $96,000 | — |
+| **Option B — Quarterly** | $23,500/quarter paid in advance | $94,000 | ~$2,000 (~2%) |
+| **Option C — Annual Prepay** | $90,000/year paid upfront | $90,000 | ~$6,000 (~6%) |
+
+### Sterolux Sterilizers — PPC Only (Upon FDA Approval)
+
+| Option | Structure | Annual Total |
+|---|---|---|
+| Monthly | $2,500/month | $30,000/year |
+| Quarterly | $7,250/quarter | $29,000/year |
+
+### Forever Smile E-Commerce Build — Milestone Payment Schedule
+
+| Milestone | Amount |
+|---|---|
+| Contract signing (deposit) | $8,250 (33%) |
+| B2C store design approval | $4,125 (16.5%) |
+| B2C store launch | $4,125 (16.5%) |
+| B2B portal design approval | $4,125 (16.5%) |
+| B2B portal launch (final) | $4,125 (16.5%) |
+| **Total** | **$24,750** |
 
 ---
 
@@ -528,26 +795,15 @@ PPC campaign management is a separate flat fee per account, reflecting the two d
 - **Payment Methods:** ACH, wire transfer, or check
 - **Flat Fee:** All services, all custom dev, all ad-hoc work — one invoice, no overages, no hourly tracking
 - **PPC Fee:** Invoiced separately per cost center — Streamline Dental Solutions and Sterolux Sterilizers receive separate PPC invoices
+- **E-Commerce Build:** Invoiced per milestone schedule above
 - **Late Payment:** 1.5% monthly interest on balances past 30 days
-
----
-
-## STRUCTURED PAYMENT PLAN (OPTIONAL)
-
-Per the discussion in the June 17, 2026 weekly sync, Anablock is prepared to offer a structured payment plan to support cash flow management:
-
-| Option | Structure | Discount |
-|---|---|---|
-| **Option A — Monthly** | $8,000/month (flat fee + PPC, Streamline Dental) | $96,000 | — |
-| **Option B — Quarterly** | $23,500/quarter paid in advance | $94,000 | ~$2,000 (~2%) |
-| **Option C — Annual Prepay** | $90,000/year paid upfront | $90,000 | ~$6,000 (~6%) |
 
 ---
 
 ## DELIVERABLES & REPORTING
 
 - **Weekly Sync:** Ongoing weekly meetings (Streamline/Anablock) with Otter.ai notes and action items
-- **Monthly Report:** Hours summary, deliverables completed, PPC performance, CRM pipeline metrics
+- **Monthly Reports:** SEO/pSEO/AEO, PPC performance, creative production summary, e-commerce, CRM pipeline, operations (see Module 13)
 - **Basecamp:** All project tasks, to-dos, and communications managed in Basecamp (Streamline Dental Solutions workspace)
 - **GitHub:** All code changes tracked in Anablock-managed repositories with commit history
 
@@ -562,27 +818,25 @@ Per the discussion in the June 17, 2026 weekly sync, Anablock is prepared to off
 5. **Confidentiality:** Both parties agree to maintain confidentiality of proprietary business information.
 6. **Scope Changes:** The monthly flat fee covers all services and custom development within the agreed scope. Any new projects or brands added outside this scope will be quoted as a separate fixed-price project and agreed upon in writing before work begins. There are no hourly overages on the flat fee.
 7. **Ad Spend:** Client is solely responsible for all PPC ad spend paid directly to Google, Meta, or other advertising platforms.
-8. **Brand Guidelines:** All content produced by Anablock will adhere to Dr. Tran's updated brand guidelines, including the correct clinical positioning of The Forever Smile's treatment protocols.
+8. **Brand Guidelines:** All content produced by Anablock will adhere to Dr. Tran's updated brand guidelines, including the correct clinical positioning of The Forever Smile's treatment protocols (same-day implants: permitted; same-day permanent zirconia restoration: not permitted).
 
 ---
 
 ## WHY ANABLOCK
 
-- **Deep Domain Knowledge:** We have built and managed your digital infrastructure from the ground up — we know your brands, your patients, your team, and your goals.
-- **Embedded Team Model:** We operate as an extension of your internal team, not a vendor. Your success is our success.
-- **Full-Stack Capability:** From custom web development and AI agents to email marketing and payroll support — one team, one relationship, one invoice.
-- **Proven Track Record:** Active management of 4 GitHub repositories, 4 brand websites, CRM integration, SEO AIO pages, and weekly strategic syncs.
-- **Anablock CRM:** Purpose-built CRM included at no additional cost — giving your team a single source of truth for all leads, patients, and pipeline activity.
+- **Deep Domain Knowledge:** We have built and managed your digital infrastructure from the ground up — we know your brands, your patients, your team, and your goals across all four properties.
+- **Embedded Team Model:** We operate as an extension of your internal team, not a vendor. Your success is our success — Dr. Tran's philosophy of "Your Success is Our Success" is one we share.
+- **Full-Stack Capability:** From custom web development, AI MCP agents, and CareStack integrations to monthly creative production and Salesforce migrations — one team, one relationship, one invoice.
+- **Proven Track Record:** Active management of 4 GitHub repositories, 4 brand websites, weekly syncs, SEO AIO pages, Basecamp project management, and a growing AI automation stack.
+- **Anablock CRM:** Purpose-built CRM included at no additional cost — giving your team a single source of truth for all leads, patients, and pipeline activity across every brand and location.
 
 ---
 
 ## PROJECT ESTIMATE — THE FOREVER SMILE E-COMMERCE PLATFORM
 
-> **Note:** This is a fixed-price project estimate, separate from the monthly retainer. It covers the full design, development, and launch of two distinct e-commerce experiences built on the same headless architecture as the Sterolux Shop (Next.js + Shopify Storefront API + Vercel), adapted for The Forever Smile brand and patient/practitioner audiences.
+> This is a fixed-price project estimate, separate from the monthly flat fee. It covers the full design, development, and launch of two distinct e-commerce experiences built on the same headless architecture as the Sterolux Shop (Next.js + Shopify Storefront API + Vercel), adapted for The Forever Smile brand and patient/practitioner audiences.
 
----
-
-### TECHNICAL FOUNDATION
+### Technical Foundation
 
 The Forever Smile e-commerce platform will be built as a **headless Shopify** implementation — the same proven architecture Anablock used for the Sterolux e-commerce store — with a custom Next.js frontend deployed on Vercel. This approach gives Dr. Tran:
 
@@ -594,7 +848,7 @@ The Forever Smile e-commerce platform will be built as a **headless Shopify** im
 
 ---
 
-### STORE 1 — B2C PATIENT SHOP (aforeversmiles.com/shop)
+### Store 1 — B2C Patient Shop (aforeversmiles.com/shop)
 
 **Concept:** A luxury patient-facing e-commerce experience where patients can browse dental implant treatment packages, post-care products, oral health supplements, and educational courses — all under The Forever Smile brand.
 
@@ -638,7 +892,7 @@ The Forever Smile e-commerce platform will be built as a **headless Shopify** im
 
 ---
 
-### STORE 2 — B2B PRACTITIONER PORTAL (aforeversmiles.com/partners or partners.aforeversmiles.com)
+### Store 2 — B2B Practitioner Portal (partners.aforeversmiles.com)
 
 **Concept:** A gated wholesale and licensing portal exclusively for licensed dental practitioners who want to offer The Forever Smile protocol in their own practices. Dr. Tran sells the technology, training, certification, and supply chain access to other dentists — creating a scalable B2B revenue stream.
 
@@ -662,96 +916,4 @@ The Forever Smile e-commerce platform will be built as a **headless Shopify** im
 - **Wholesale checkout** — net-30 payment terms, PO number field, invoice generation
 - **Contract e-signature** — DocuSign / HelloSign integration for licensing agreements at checkout
 - **Anablock CRM B2B pipeline** — every practitioner registration enters a dedicated B2B sales pipeline with automated follow-up
-- **Referral tracking** — practitioners get a unique referral code; patient referrals tracked back to the originating practice
-- **Co-branded marketing asset generator** — practitioners download pre-approved Forever Smile marketing materials with their practice name/logo
-- **Continuing Education (CE) tracking** — practitioners log completed training; certificates auto-generated
-
-#### B2B Build Estimate
-
-| Phase | Description | Hours | Cost @ $55/hr |
-|---|---|---|---|
-| **Phase 1 — Discovery & B2B Architecture** | B2B requirements, practitioner journey mapping, Shopify B2B config, gated access design | 25 hrs | $1,375 |
-| **Phase 2 — UI/UX Design** | B2B portal design, practitioner dashboard, approval flow, tiered pricing UI | 35 hrs | $1,925 |
-| **Phase 3 — Frontend Development** | Next.js B2B portal, gated routes, practitioner dashboard, asset download center | 70 hrs | $3,850 |
-| **Phase 4 — Shopify B2B Backend** | B2B catalog, tiered pricing, wholesale checkout, PO/net-30 payment terms | 35 hrs | $1,925 |
-| **Phase 5 — Integrations** | NPI verification API, DocuSign/HelloSign, Anablock CRM B2B pipeline, referral tracking | 30 hrs | $1,650 |
-| **Phase 6 — Content & Catalog** | Product copy, licensing terms, training course setup, marketing kit uploads | 20 hrs | $1,100 |
-| **Phase 7 — QA, Testing & Launch** | End-to-end practitioner flow testing, security audit, Vercel deployment | 15 hrs | $825 |
-| **Phase 8 — Training & Handoff** | Admin training, approval workflow guide, Basecamp documentation | 10 hrs | $550 |
-| **TOTAL — B2B Practitioner Portal** | | **240 hrs** | **$13,200** |
-
----
-
-### COMBINED E-COMMERCE PROJECT SUMMARY
-
-| Store | Hours | Fixed Price |
-|---|---|---|
-| B2C Patient Shop (aforeversmiles.com/shop) | 240 hrs | $13,200 |
-| B2B Practitioner Portal (partners.aforeversmiles.com) | 240 hrs | $13,200 |
-| **TOTAL E-COMMERCE BUILD** | **480 hrs** | **$26,400** |
-
-> **Bundle Discount:** Both stores built together = **$24,750** (save $1,650 — 6.25% off)
-
-#### Ongoing E-Commerce Maintenance (Post-Launch)
-After launch, both stores are maintained under the existing monthly retainer (Module 4 — E-Commerce Management, 10–15 hrs/month). No additional monthly fee.
-
-#### Recommended Build Timeline
-
-| Milestone | Target Date |
-|---|---|
-| Project kickoff & discovery | Week 1 (July 7, 2026) |
-| Design approval | Week 3 (July 21, 2026) |
-| B2C store development complete | Week 7 (August 18, 2026) |
-| B2C store launch | Week 8 (August 25, 2026) |
-| B2B portal development complete | Week 11 (September 15, 2026) |
-| B2B portal launch | Week 12 (September 22, 2026) |
-
-#### Payment Schedule (E-Commerce Project)
-
-| Milestone | Amount Due |
-|---|---|
-| Contract signing (deposit) | $8,250 (33%) |
-| B2C store design approval | $4,125 (16.5%) |
-| B2C store launch | $4,125 (16.5%) |
-| B2B portal design approval | $4,125 (16.5%) |
-| B2B portal launch (final) | $4,125 (16.5%) |
-| **Total** | **$24,750** |
-
----
-
-## UPDATED TOTAL INVESTMENT SUMMARY
-
-| Line Item | Type | Monthly | Annual / One-Time |
-|---|---|---|---|
-| Hourly Retainer (100 hrs min @ $55/hr) | Monthly | $5,500 | $66,000/yr |
-| PPC Campaign Management (flat fee) | Monthly | $2,500 | $30,000/yr |
-| Anablock CRM | Monthly | Included | Included |
-| **B2C Patient Shop Build** | One-Time | — | $13,200 |
-| **B2B Practitioner Portal Build** | One-Time | — | $13,200 |
-| **E-Commerce Bundle Discount** | One-Time | — | –$1,650 |
-| **STREAMLINE DENTAL SOLUTIONS — TOTAL (Retainer + PPC)** | | **$8,000/mo** | **$96,000/yr** |
-| **STEROLUX STERILIZERS — PPC Mgmt (upon FDA approval)** | Monthly | $2,500/mo | $30,000/yr |
-| **STEROLUX STERILIZERS — Creative/Dev Hours (upon FDA approval)** | Monthly | ~$550–$880/mo est. | ~$6,600–$10,560/yr est. |
-| **TOTAL E-COMMERCE BUILD — Forever Smile (bundled)** | One-Time | — | **$24,750** |
-| **COMBINED FIRST-YEAR INVESTMENT (Streamline + E-Commerce)** | | | **$120,750** |
-| **COMBINED FIRST-YEAR INVESTMENT (All incl. Sterolux PPC upon activation)** | | | **~$157,350** |
-
----
-
-## NEXT STEPS
-
-1. ✅ Review this proposal with your team
-2. ✅ Confirm scope adjustments or additions
-3. ✅ Select payment option (A, B, or C)
-4. ✅ Sign the Service Agreement (to be sent separately)
-5. ✅ Confirm contract start date (proposed: July 1, 2026)
-
----
-
-**Questions?**
-Vuk Dukic | Anablock
-vuk@anablock.com | anablock.com
-
----
-
-*This proposal is confidential and prepared exclusively for Dr. My G. Tran and Streamline Dental Solutions / The Forever Smile / Sterolux Sterilizers. All pricing is valid through July 21, 2026.*
+- **Referral tracking** — practitioners
