@@ -27,12 +27,6 @@ We operate on one principle: **Your Success is Our Success.**
 | Sterolux Sterilizers | steroluxsterilizer.com | Website, SEO, e-commerce, PPC (pending FDA) |
 | Sterolux Shop | shop.steroluxsterilizer.com | E-commerce platform, product management |
 
-**GitHub Repositories Actively Managed:**
-- `anablock/streamline-dental-main`
-- `anablock/sterolux-ecommerce`
-- `anablock/sterolux-studio`
-- `anablock/forever-smile`
-
 ---
 
 ## WHAT THIS PROPOSAL COVERS
@@ -301,25 +295,3 @@ For $8,000/month — $5,500 flat fee + $2,500 PPC management — Streamline Dent
 - 6 monthly reports: SEO/pSEO/AEO, PPC performance, creative production, e-commerce, CRM pipeline, operations
 - Weekly sync with Otter.ai notes and action items
 - All work tracked in Basecamp and GitHub
-
-**No hourly tracking. No overages. No surprises.**
-
----
-
-## NEXT STEPS
-
-1. Review this proposal with your team
-2. Confirm scope adjustments or additions
-3. Select payment option (A, B, or C)
-4. Sign the Service Agreement (to be sent separately)
-5. Confirm contract start date — proposed: **July 1, 2026**
-
----
-
-**Questions?**
-Vuk Dukic | Anablock
-vuk@anablock.com | anablock.com
-
----
-
-*This proposal is confidential and prepared exclusively for Dr. My G. Tran, Streamline Dental Solutions, The Forever Smile, and Sterolux Sterilizers. All pricing is valid through July 21, 2026.*
